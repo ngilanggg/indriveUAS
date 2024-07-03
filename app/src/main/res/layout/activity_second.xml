@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Map View -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!-- Menu Button -->
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_menu"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Top Right Button -->
+    <ImageButton
+        android:id="@+id/btnTopRight"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_right"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Searching TextView -->
+    <TextView
+        android:id="@+id/tvSearching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Searching for you on the map..."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <!-- Ride Options -->
+
+    <!-- Search and Fare Inputs -->
+
+    <LinearLayout
+        android:id="@+id/layoutOptions"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="183dp"
+        android:background="#1C1F24"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnMoto"
+            android:layout_width="67dp"
+            android:layout_height="62dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Moto"
+            android:src="@drawable/ic_moto" />
+
+        <ImageButton
+            android:id="@+id/btnRide"
+            android:layout_width="86dp"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Ride"
+            android:scrollbarSize="30dp"
+            android:src="@drawable/ic_ride" />
+
+        <ImageButton
+            android:id="@+id/btnSeater"
+            android:layout_width="87dp"
+            android:layout_height="54dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="6-seater"
+            android:src="@drawable/ic_6_seater" />
+
+        <ImageButton
+            android:id="@+id/btnCouriers"
+            android:layout_width="87dp"
+            android:layout_height="54dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Couriers"
+            android:src="@drawable/ic_couriers" />
+
+        <ImageButton
+            android:id="@+id/btnCityToCity"
+            android:layout_width="87dp"
+            android:layout_height="54dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="City to city"
+            android:src="@drawable/ic_city_to_city" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#1C1F24"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To"
+            android:drawableLeft="@drawable/ic_search"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <EditText
+            android:id="@+id/etFare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Offer your fare"
+            android:drawableLeft="@drawable/ic_money"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Find a Driver Button -->
+        <Button
+            android:id="@+id/btnFindDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_driver"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

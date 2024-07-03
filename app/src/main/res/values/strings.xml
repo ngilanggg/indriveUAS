@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">indriveUAS</string>
+
+        <string name="searching_for_you">Searching for you on the map...</string>
+        <string name="hint_destination">To</string>
+        <string name="hint_fare">Offer your fare</string>
+        <string name="find_driver">Find a driver</string>
+        <string name="moto">Moto</string>
+        <string name="ride">Ride</string>
+        <string name="seater">6-seater</string>
+        <string name="couriers">Couriers</string>
+        <string name="city_to_city">City to city</string>
+
+
+</resources>
